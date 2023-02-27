@@ -1,0 +1,53 @@
+#include<iostream>
+#include "Staque-1.h"
+using namespace std;
+int main() {
+	Staque c;
+	cout << "Staque 'C' is created. unload? " << boolalpha << c.UnLoad() << endl;
+	c.Shove(8);
+	cout << "After inclusion : " << c << endl;
+	c.Shove(5);
+	cout << "After inclusion : " << c << endl;
+	c.Shove(3);
+	cout << "After inclusion : " << c << endl;
+	c.Shove(7);
+	cout << "After inclusion : " << c << endl;
+	c.Shove(13);
+	cout << "After inclusion : " << c << endl;
+	c.Shove(2);
+	cout << "After inclusion : " << c << endl;
+	c.Shove(19);
+	cout << "After inclusion : " << c << endl;
+	c.EliminateFront(4);
+	cout << "After eliminating  4 even members : " << c << endl;
+	c.EliminateBack(6);
+	cout << "After eliminating  6 odd members : " << c << endl;
+	cout << "Is 'C' unload? " << boolalpha << c.UnLoad() << endl;
+	Staque d;
+	cout << "\nStaque 'D' is created. unload? " << boolalpha << d.UnLoad() << endl;
+	d.Shove(28);
+	cout << "After inclusion : " << d << endl;
+	d.Shove(896);
+	cout << "After inclusion : " << d << endl;
+	d.Shove(44);
+	cout << "After inclusion : " << d << endl;
+	d.EliminateBack(7);
+	cout << "After requesting to remove 7 odd members, 'D' : " << d << endl;
+	d.Shove(3);
+	cout << "After inclusion : " << d << endl;
+	d.EliminateFront(5);
+	cout << "After requesting to remove 5 even members, 'D' : " << d << endl;
+	cout << "Is 'D' unload? " << boolalpha << d.UnLoad() << endl;
+	Staque e;
+	cout << "\nStaque 'E' is created. unload? " << boolalpha << e.UnLoad() << endl;
+	e.Shove(8);
+	cout << "After inclusion" << e << endl;
+	e.Shove(5);
+	cout << "After inclusion" << e << endl;
+	e.Shove(9);
+	cout << "After inclusion" << e << endl;
+	e.EliminateFront(4);
+	cout << "After requesting to remove 4 even members, 'E' : " << e << endl;
+	e.EliminateBack(4);
+	cout << "After requesting to remove 4 odd members, 'E' : " << e << endl;
+}
